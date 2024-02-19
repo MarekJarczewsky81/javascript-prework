@@ -1,0 +1,40 @@
+.button-look {
+  color: white;
+  border-radius: 10%;
+  font-size: 56px;
+}
+
+#button-rock {
+  background-color: #60a3bc;
+}
+
+#button-paper {
+  background-color: #079992;
+}
+
+#button-scissors {
+  background-color: #0a3d62;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+#buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+header {
+  text-align: center;
+}
+
+#messages {
+  font-size: 40px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
