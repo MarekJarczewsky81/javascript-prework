@@ -1,0 +1,5 @@
+git log --oneline --decorate --graph --all          // do prostego pokazania commitow 
+
+git checkout -b <nazwa>                          // tworzenie nowego brancha
+
+git branch -d <nazwa>                           // kasowanie brancha
