@@ -1,7 +1,9 @@
 var buttonRock = document.getElementById("button-rock");
 var buttonPaper = document.getElementById("button-paper");
 var buttonScissors = document.getElementById("button-scissors");
-
+var playerWins = 0;
+var computerWins = 0;
+var resultDiv = document.getElementById("result");
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -53,17 +55,28 @@ function buttonClicked(argButtonName) {
       );
     if (argPlayerMove == "papier" && argComputerMove == "kamień") {
         printMessage("Wygrywasz!");
+        playerWins++;
     } else if (argPlayerMove == "nożyce" && argComputerMove == "papier") {
         printMessage("Wygrywasz!");
+        playerWins++;
     } else if (argPlayerMove == "kamień" && argComputerMove == "nożyce") {
         printMessage("Wygrywasz!");
+        playerWins++;
     } else if (argPlayerMove == argComputerMove) {
         printMessage("Remis!");
     } else {
         printMessage("Przegrywasz!");
+        computerWins++;
      }
     printMessage("Zagrałem " + argComputerMove + ", a Ty " + argPlayerMove + ".");
-  }
+    printMessage("Punkty: Ty - Computer")
+    resultDiv.textContent = `${playerWins} - ${computerWins}`;
+      if (playerWins === '3') {
+        console.log('Gratulacje! Wygrałeś!');
+      } else if (computerWins === '3') { 
+        console.log('Niestety, przegrywasz.');
+    };
+  };
 
   playerMove = argButtonName;
   console.log("wybór ruchu gracza to: " + playerMove);
@@ -84,3 +97,4 @@ buttonPaper.addEventListener("click", function () {
 buttonScissors.addEventListener("click", function () {
   buttonClicked("nożyce");
 });
+
