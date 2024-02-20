@@ -1,44 +1,26 @@
 * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            text-align: center;
-            background-color: blue;
-        }
-
-        .btn {
-            padding: 15px 40px;
-            border-style: none;
-            margin-top: 50px;
-            background-color: yellow;
-            border-radius: 20px;
-            box-shadow: 0 0 0 6px red, 0 0 0 12px yellow, 0 0 0 18px green;
-            font-size: 40px;
-            font-family: arial;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-
-.button-look {
-  color: white;
-  border-radius: 10%;
-  font-size: 56px;
+  padding: 0;
+  margin: 0;        
 }
 
-#button-rock {
-  background-color: #60a3bc;
+body {
+  text-align: center;
+  background-color: lightblue;
 }
 
-#button-paper {
-  background-color: #079992;
+.btn {
+  padding: 15px 40px;
+  border-style: none;
+  margin-top: 50px;
+  background-color: yellow;
+  border-radius: 20px;
+  box-shadow: 0 0 0 6px red, 0 0 0 12px yellow, 0 0 0 18px green;
+  font-size: 40px;
+  font-family: arial;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-#button-scissors {
-  background-color: #0a3d62;
-}
 
 .container {
   padding: 20px;
@@ -46,12 +28,6 @@
   width: 1140px;
 }
 
-/* #buttons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-} */
 
 header {
   text-align: center;
@@ -61,4 +37,3 @@ header {
   font-size: 40px;
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
