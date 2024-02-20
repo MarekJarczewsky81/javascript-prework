@@ -73,7 +73,7 @@ function buttonClicked(argButtonName) {
     printMessage("Zagrałem " + argComputerMove + ", a Ty " + argPlayerMove + ".");
     printMessage("Punkty: Ty - Computer")
     resultDiv.textContent = `${playerWins} - ${computerWins}`;
-      if (playerWins == 3) {                                                             // NIE DZIALA Dodac logike aby gra 
+      if (playerWins == 3) {                                                             // !!! NIE DZIALA Dodac logike aby gra 
                                                                                           // rozgrywala sie do 3 rund z wynikiem !!!
         console.log('Gratulacje! Wygrałeś!');
       } else if (computerWins == 3) { 
