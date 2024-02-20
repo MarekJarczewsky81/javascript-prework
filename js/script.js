@@ -1,15 +1,15 @@
-var buttonRock = document.getElementById("button-rock");
-var buttonPaper = document.getElementById("button-paper");
-var buttonScissors = document.getElementById("button-scissors");
-var playerWins = 0;
-var computerWins = 0;
-var resultDiv = document.getElementById("result");
+const buttonRock = document.getElementById("button-rock");
+const buttonPaper = document.getElementById("button-paper");
+const buttonScissors = document.getElementById("button-scissors");
 
+let playerWins = 0;
+let computerWins = 0;
+let resultDiv = document.getElementById("result");
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + " został kliknięty");
   
-  var computerMove, randomNumber;
+  let computerMove, randomNumber;
   randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log("wylosowana liczba to: " + randomNumber);
   if (randomNumber == "1") {
@@ -21,7 +21,7 @@ function buttonClicked(argButtonName) {
   }
   printMessage("Mój ruch: " + computerMove);
 
-  var playerInput, playerMove;
+  let playerInput, playerMove;
   if (playerInput == "1") {
     playerMove = "kamień";
   } else if (playerInput == "2") {
@@ -45,6 +45,8 @@ function buttonClicked(argButtonName) {
     return "kamień";
     }
   }
+
+
 
   function displayResult(argPlayerMove, argComputerMove) {
     console.log(
@@ -71,9 +73,10 @@ function buttonClicked(argButtonName) {
     printMessage("Zagrałem " + argComputerMove + ", a Ty " + argPlayerMove + ".");
     printMessage("Punkty: Ty - Computer")
     resultDiv.textContent = `${playerWins} - ${computerWins}`;
-      if (playerWins === '3') {
+      if (playerWins == 3) {                                                             // NIE DZIALA Dodac logike aby gra 
+                                                                                          // rozgrywala sie do 3 rund z wynikiem !!!
         console.log('Gratulacje! Wygrałeś!');
-      } else if (computerWins === '3') { 
+      } else if (computerWins == 3) { 
         console.log('Niestety, przegrywasz.');
     };
   };
